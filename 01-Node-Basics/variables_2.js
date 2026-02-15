@@ -10,3 +10,25 @@ let totalPrice = 100.00
 
 console.log(fullName)
 console.log(age)
+
+// Let doesn't give us error if variable is not define and output is undefine
+let a;
+console.log(a)
+
+// const variable (fixed value)
+// const require variable's value either give us error
+const PI =  3.14;
+const pgrmName = "JavaScript";
+
+console.log(PI);
+console.log(pgrmName)
+
+// Block scope variable
+{
+    let a = 10
+    console.log(a)
+}
+{
+    let a = 20
+    console.log(a)
+}
