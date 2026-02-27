@@ -8,7 +8,7 @@ if (num % 5 === 0) {
 }
 
 // Q2 - Write a code which can give grades to students according to their score.
-let score = 90;
+let score = prompt("Enter your score (0-100): ")
 let grade;
 
 if (score >= 90 && score <= 100) {
