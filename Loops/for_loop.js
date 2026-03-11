@@ -13,3 +13,5 @@ for (i = 1; i <= 5; i++) {
 console.log("Sum = ", sum);
 
 console.log("Loop has ended!");
+
+// Infinite loop --> Loops that never end ==> and we should never define infinite loop.
