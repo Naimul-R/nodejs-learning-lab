@@ -2,6 +2,11 @@
 // Note: Strings are immutable (not changable) in JS
 
 // str.toUpperCase() -->
-let str = "ILoveYou!"
+let str = "ILoveYou!";
 feelings = str.toUpperCase();
-console.log(feelings)
+console.log(feelings);
+
+// str.toLowerCase()
+let str2 = "ILoveYou";
+feelingss = str.toLowerCase();
+console.log(feelingss);
