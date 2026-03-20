@@ -5,3 +5,5 @@
 - QS3 - Prompt the user to enter their full name. Generate a username for them based on the input. start username with @, follow by their full name and ending with the fullname length.
 - QS4 - For a given array with marks of students ==> [85, 97, 44, 37, 76, 60]
   find the average marks of the entire class
+- QS5 - For a given array with price of 5 items ==> [250, 645, 300, 900, 50]
+  all item have an offer of 10% OFF on them. change the array to store final price after applying offer
