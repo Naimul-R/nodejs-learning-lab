@@ -7,3 +7,6 @@
   find the average marks of the entire class
 - QS5 - For a given array with price of 5 items ==> [250, 645, 300, 900, 50]
   all item have an offer of 10% OFF on them. change the array to store final price after applying offer
+- QS6 - create an array to store companies -> "Bloomburg", "Microsoft", "Uber", "Google", "IBM", "Netflix".
+  (a) remove the first company from array, (b) Remove Uber & add Ola in it's place
+  (b) add Amazone at the end.
