@@ -10,3 +10,5 @@
 - QS6 - create an array to store companies -> "Bloomburg", "Microsoft", "Uber", "Google", "IBM", "Netflix".
   (a) remove the first company from array, (b) Remove Uber & add Ola in it's place
   (b) add Amazone at the end.
+- QS7 - Create a function using the "function" keyword that takes a string as an arguement & return the number of vowels in the string.
+- QS8 - Create a arrow function to perform the same task
