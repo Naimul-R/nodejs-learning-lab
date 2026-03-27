@@ -15,4 +15,28 @@ let newArr = num.map((val) => {
 })
 console.log(newArr);
 
-// filter method
+// filter method --> Create a new array of elements that give true for a condition/filter. e.g: all even elements,
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let evenArr = arr.filter((val) => {
+    return val % 2 === 0;
+})
+
+console.log("Even Value is = ", evenArr);
+
+// reduce --> to perform some operation & reduces the array to a single value. It returns the single value.
+let arry = [1, 2, 3, 4, 5];
+
+const output = arry.reduce((res, curr) => {
+    return res + curr;
+})
+console.log(output);
+
+// find largest number using reduce modules
+let numbers = [2, 5, 7, 3];
+
+let output1 = numbers.reduce((prev, curr) => {
+    return prev > curr ? prev : curr;
+});
+
+console.log(output1);
