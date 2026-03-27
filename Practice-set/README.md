@@ -13,3 +13,7 @@
 - QS7 - Create a function using the "function" keyword that takes a string as an arguement & return the number of vowels in the string.
 - QS8 - Create a arrow function to perform the same task
 - QS9 - for a given array of numbers, print the square of each value using the forEach loop.
+- QS10 - we are given array of marks of students. Filter our of the marks of the student that score 90
+- QS11 - Take a number n as input from user. Create an array of numbers form 1 to n
+  use the reduce method to calculate sum of all numbers in the array.
+  use the reduce method to calculate product of all number in the array.
