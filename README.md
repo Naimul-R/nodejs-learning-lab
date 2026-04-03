@@ -8,4 +8,6 @@ A hands-on Node.js learning lab covering core concepts, backend fundamentals, an
 - Arrays (methods)
 - Loop and strings with (methods)
 - Operators and conditional statement
+- Function
+- DOM (Document Object Model)
 - Practice with practice set Question
