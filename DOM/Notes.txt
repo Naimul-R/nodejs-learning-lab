@@ -1,3 +1,0 @@
-# Starter Code 
-    - <style> tag connect HTML with CSS </style>
-    - <script> tag connects HTML with JS</script>
