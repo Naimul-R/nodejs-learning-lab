@@ -1,2 +1,5 @@
-console.log("Hello!");
-alert("Attention!"); 
+console.log("Hello! Learning DOM.");
+alert("Attention!");
+
+console.dir(document.body);
+console.log(document.body);
