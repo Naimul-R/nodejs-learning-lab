@@ -10,3 +10,7 @@ let para = document.getElementsByClassName("para-class")
 console.log(para)
 console.dir(headings);
 console.log(headings);
+
+// Selecting with tags -->
+let parahs = document.getElementsByTagName("p");
+console.log(parahs);
