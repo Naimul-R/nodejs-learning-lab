@@ -17,3 +17,8 @@
 - QS11 - Take a number n as input from user. Create an array of numbers form 1 to n
   use the reduce method to calculate sum of all numbers in the array.
   use the reduce method to calculate product of all number in the array.
+
+## DOM Practice set question -->
+
+- QS12 - Create a h2 heading with text - "Hello JavaScript". Append "From Apna Collage students" to text using this js
+- QS13 - Create 3 divs with common class name - "box". Access them and add some unique text to each of them.
