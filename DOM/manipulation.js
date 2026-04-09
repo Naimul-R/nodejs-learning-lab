@@ -14,3 +14,16 @@ console.log(headings);
 // Selecting with tags -->
 let parahs = document.getElementsByTagName("p");
 console.log(parahs);
+
+// Query Selector (myId, class, tag) -->
+console.log("\nQuery Selector.")
+let firstElement = document.querySelector("p"); // First element 
+console.dir(firstElement);
+
+//Query selector All (Notelist)
+let allElement = document.querySelectorAll("p"); // All Element
+console.dir(allElement);
+
+// How to write class Query selector with dot(.)
+let myClass = document.querySelector(".para-class");
+console.dir(myClass);
