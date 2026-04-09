@@ -14,3 +14,5 @@
     - innerText : return the text content of the element and all its children
     - innerHTML : return the plain text or HTML contents in the element
     - textContent : return the textual content even for hidden elements
+    - firstChild
+    - lastChild

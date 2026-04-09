@@ -27,3 +27,9 @@ console.dir(allElement);
 // How to write class Query selector with dot(.)
 let myClass = document.querySelector(".para-class");
 console.dir(myClass);
+
+// check properties --> 
+console.log("\nProperties manipulation.")
+
+let div = document.querySelector("div");
+console.dir(div);
