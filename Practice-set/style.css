@@ -9,3 +9,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.content {
+    color: yellow;
+}
+
+.newClass {
+    background-color: orangered;
+}
