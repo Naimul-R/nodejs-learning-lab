@@ -16,3 +16,4 @@
     - textContent : return the textual content even for hidden elements
     - firstChild
     - lastChild
+    - Attributes
