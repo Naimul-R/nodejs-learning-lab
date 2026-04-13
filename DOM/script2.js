@@ -20,4 +20,22 @@ let style = document.querySelector("div");
 div.style.backgroundColor = "purple";
 div.style.fontSize = "20px";
 
-div.innerText = "Hello!";
+//div.innerText = "Hello!";
+
+// Insert Element -->
+console.log("\nInsert Elements.");
+
+let newBtn = document.createElement("button");
+newBtn.innerText = "click me!";
+console.log(newBtn);
+
+let div2 = document.querySelector("div");
+div.append(newBtn);
+// div.prepend()
+// div.before()
+// div.after()
+console.log(div2);
+
+// remove element 
+// let para = document.querySelector("p");
+// para.remove();
