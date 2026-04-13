@@ -13,3 +13,11 @@ console.log(para.getAttribute("class"));
 // setAttribute 
 let paraSet = document.querySelector("p");
 console.log(para.setAttribute("class", "newClass"));
+
+// Style is JS
+let style = document.querySelector("div");
+
+div.style.backgroundColor = "purple";
+div.style.fontSize = "20px";
+
+div.innerText = "Hello!";

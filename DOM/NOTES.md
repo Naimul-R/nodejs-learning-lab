@@ -17,3 +17,4 @@
     - firstChild
     - lastChild
     - Attributes
+    - Style
