@@ -22,3 +22,7 @@
 
 - QS12 - Create a h2 heading with text - "Hello JavaScript". Append "From Apna Collage students" to text using this js
 - QS13 - Create 3 divs with common class name - "box". Access them and add some unique text to each of them.
+
+## Event Handler Question -->
+
+- QS1 - Create a toggle button that changes the screen to dark-mode when we clicked & light-mode by clicked again.
