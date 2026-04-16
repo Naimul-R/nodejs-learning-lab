@@ -1,8 +1,22 @@
-div {
+.box1 {
     height: 100px;
     width: 100px;
     background-color: maroon;
     color: white;
     border: 1px solid black;
     margin-top: 20px;
+}
+
+.box2 {
+    margin-top: 6px;;
+    height: 100px;
+    width: 100px;
+    background-color: darkcyan;
+    color: white;
+    border: 1px solid black;
+}
+
+#btn2 {
+    background-color: cadetblue;
+    color: white;
 }

@@ -10,3 +10,5 @@
 # Event Object --> It is a special object that has details about the object
 
 - all event handlers have access to the event object's properties and methods.
+
+# Event Listener
