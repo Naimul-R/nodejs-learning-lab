@@ -14,8 +14,12 @@ btn1.onclick = (Event) => {
     console.log(a);
 }
 
-div = document.querySelector("div");
 
-box.onmouseover = () => {
+div = document.querySelector("div");
+div.onmouseover = (evt) => {
+    console.log("Event Object for Div...")
+    console.log(evt);
+    console.log(evt.target);
+    console.log(evt.clientX, evt.clientY);
     console.log("Inside div")
 }
