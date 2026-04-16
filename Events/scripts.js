@@ -38,3 +38,13 @@ btn2.addEventListener("click", (evt) => {
 btn2.addEventListener("click", () => {
     console.log("Button2 was clicked! - Handler 2");
 })
+// Methods for remove handler 
+const handler3 = () => {
+    console.log("Button2 was clicked! - Handler 3");
+}
+btn2.addEventListener("click", handler3);
+btn2.removeEventListener("click", handler3);
+
+btn2.addEventListener("click", () => {
+    console.log("Button2 was clicked! - Handler 4");
+})
