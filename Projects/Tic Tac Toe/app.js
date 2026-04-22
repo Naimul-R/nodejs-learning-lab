@@ -13,3 +13,16 @@ const winPattern = [
     [3, 4, 5],
     [6, 7, 8]
 ]
+
+boxes.forEach((box) => {
+    box.addEventListener("click", () => {
+        console.log("Box was clicked!");
+        if (turnO) { //PlayerO 
+            box.innerText = "O";
+            turnO = false;
+        } else { //PlayerX
+            box.innerText = "X";
+            turnO = true;
+        }
+    });
+});
