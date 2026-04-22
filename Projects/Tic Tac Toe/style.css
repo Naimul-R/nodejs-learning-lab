@@ -34,3 +34,12 @@ body {
     font-size: 8vmin;
     color: #6f1d1b;
 }
+
+#reset {
+    padding: 0.70rem;
+    font-size: 0.80rem;
+    background-color: #001d3d;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
