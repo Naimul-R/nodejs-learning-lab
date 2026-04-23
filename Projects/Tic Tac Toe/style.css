@@ -33,6 +33,7 @@ body {
     box-shadow: 0 0 1rem rgba(0,0,0,0.2);
     font-size: 8vmin;
     color: #6f1d1b;
+    background-color: #f9c74f;
 }
 
 #reset {
