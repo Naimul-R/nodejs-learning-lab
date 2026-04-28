@@ -11,3 +11,8 @@ A hands-on Node.js learning lab covering core concepts, backend fundamentals, an
 - Function
 - DOM (Document Object Model)
 - Practice with practice set Question
+
+# Project Building
+
+- Tic Tac Toe
+- Rock, Paper & Sceissor
