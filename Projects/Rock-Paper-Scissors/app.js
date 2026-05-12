@@ -4,6 +4,9 @@ let compScore = 0;
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
 
+const userScorePara = document.querySelector("#user-score");
+const compScorePara = document.querySelector("#comp-score");
+
 const genCompChoice = () => {
     const options = ["rock", "paper", "scissors"];
     const ranIdx = Math.floor(Math.random() * 3);
@@ -11,25 +14,27 @@ const genCompChoice = () => {
 }
 
 const drawGame = () => {
-    console.log("Game was draw!");
     msg.innerText = "Game was draw. Play agian!";
+    msg.style.backgroundColor = "#061a40";
 }
 
-const showWinner = (userWin) => {
+const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin) {
-        console.log("You Win🥳!");
-        msg.innerText = "You Win🥳!";
+        userScore++;
+        userScorePara.innerText = userScore;
+        msg.innerText = `You Win🥳! Your ${userChoice} beats ${compChoice}`;
+        msg.style.backgroundColor = "green";
     } else {
-        console.log("You lose😫!");
-        msg.innerText = "You lose😫!";
+        compScore++
+        compScorePara.innerText = compScore;
+        msg.innerText = `You lost😫! ${compChoice} beats your ${userChoice}`;
+        msg.style.backgroundColor = "red";
     }
 }
 
 const playGame = (userChoice) => {
-    console.log("User choice = ", userChoice);
     // Generate computer chocie
     const compChoice = genCompChoice();
-    console.log("Computer choice = ", compChoice);
 
     // Create condition to define win, lose or draw 
     if (userChoice === compChoice) {
@@ -47,7 +52,7 @@ const playGame = (userChoice) => {
             // rock, paper
             userWin = compChoice === "rock" ? false : true;
         }
-        showWinner(userWin);
+        showWinner(userWin, userChoice, compChoice);
     }
 };
 
