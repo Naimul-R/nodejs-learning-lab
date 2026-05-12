@@ -9,12 +9,34 @@ const genCompChoice = () => {
     return options[ranIdx];
 }
 
+const drawGame = () => {
+    console.log("Game was draw!");
+}
+
 const playGame = (userChoice) => {
     console.log("User choice = ", userChoice);
     // Generate computer chocie
     const compChoice = genCompChoice();
     console.log("Computer choice = ", compChoice);
-}
+
+    // Create condition to define win, lose or draw 
+    if (userChoice === compChoice) {
+        // Draw Game 
+        drawGame();
+    } else {
+        let userWin = true;
+        if (userChoice === "rock") {
+            // Scissors, Paper
+            userWin = compChoice === "paper" ? false : true;
+        } else if (userChoice = "paper") {
+            // rock, scissors
+            userWin = compChoice === "scissors" ? false : true;
+        } else {
+            // rock, paper
+            userWin = compChoice === "rock" ? false : true;
+        }
+    }
+};
 
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
