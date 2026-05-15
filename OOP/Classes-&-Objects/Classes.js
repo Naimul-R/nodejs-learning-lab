@@ -1,5 +1,10 @@
 // Creating a Class -->
 class ToyotaCar {
+    // Create constructor
+    constructor () {
+        console.log("Creating new object.");
+    }
+
     start () {
         console.log("Start");
     }
@@ -15,8 +20,27 @@ class ToyotaCar {
 }
 
 // Creating object through class (ToyotaCar)
-let Fortuner = new ToyotaCar();
+let Fortuner = new ToyotaCar(); // Invoke constructor
 Fortuner.setBrand ("Fortuner");
+console.log(Fortuner);
 
-let lexus = new ToyotaCar();
+let lexus = new ToyotaCar(); // Invoke construtor
 lexus.setBrand("lexus");
+console.log(lexus);
+
+
+// Another way to invoke or initialize constructor
+class RollsRoyce {
+    constructor (brand, mileage) {
+        console.log("Royality with Rolls Royes");
+        this.brand = brand;
+        this.mileage = mileage;
+    }
+
+    model () {
+        console.log("Rolls-Royce Cullinan (SUV)");
+    }
+};
+
+let Cullinan = new RollsRoyce("Rolls-Royce", 10);
+console.log(Cullinan);

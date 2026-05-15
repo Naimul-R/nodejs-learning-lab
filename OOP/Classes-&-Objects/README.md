@@ -24,3 +24,10 @@ class MyClass {
 let myObj = new MyClass ();
 
 ```
+
+## Constructor
+
+> is a special methods
+
+- Constructor automatically invoked by new
+- initializes object
