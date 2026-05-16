@@ -44,3 +44,34 @@ class RollsRoyce {
 
 let Cullinan = new RollsRoyce("Rolls-Royce", 10);
 console.log(Cullinan);
+
+// Inheritance -->
+class Person {
+    constructor () {
+        this.species = "Homo Sapiens";
+    }
+    eat () {
+        console.log("eat");
+    }
+    sleep () {
+        console.log("sleep");
+    }
+    work () {
+        console.log("do nothing!!");
+    }
+}
+
+class Enginner extends Person {
+    work () {
+        console.log("Solve problem, build somethings");
+    }
+}
+
+class Doctor extends Person {
+    work () {
+        console.log("treat patients");
+    }
+}
+
+let Naimul = new Enginner();
+let Mehadi = new Doctor();
