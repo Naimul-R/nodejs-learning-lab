@@ -46,3 +46,13 @@ class child EXTENDS parent {
 ```
 
 > if child and parent have same methods, child's methods will be used [method overriding]
+
+## Super Keywords
+
+- The super keyword is used to call the constractor of its parents class to access the parents properties and methods
+
+```
+super(args) // call Parent's constractor
+
+super.parentMethod(args)
+```
