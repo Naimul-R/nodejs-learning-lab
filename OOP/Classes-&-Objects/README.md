@@ -31,3 +31,18 @@ let myObj = new MyClass ();
 
 - Constructor automatically invoked by new
 - initializes object
+
+## Inheritance
+
+- Inheritance is passing down properties & methods from parents class to child class
+
+```
+class parent {
+
+}
+class child EXTENDS parent {
+
+}
+```
+
+> if child and parent have same methods, child's methods will be used [method overriding]
