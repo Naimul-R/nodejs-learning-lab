@@ -61,8 +61,14 @@ class Person {
     }
 }
 
+// Using Super keyword for create Child's constractor and also inherit Parent's constractor
 class Enginner extends Person {
+    constructor (branch) {
+        super(); // To invoke parent class constractor
+        this.branch = branch;
+    }
     work () {
+        super.eat();
         console.log("Solve problem, build somethings");
     }
 }
@@ -74,4 +80,5 @@ class Doctor extends Person {
 }
 
 let Naimul = new Enginner();
+let Mahi = new Enginner("Chemical Enginner.")
 let Mehadi = new Doctor();
