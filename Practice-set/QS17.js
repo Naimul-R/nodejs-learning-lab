@@ -12,6 +12,10 @@ class User {
 }
 
 class Admin extends User {
+    constructor(name, email) {
+        super(name, email);
+    }
+
     editData() {
         DATA = "Some new value";
     }
@@ -20,3 +24,5 @@ class Admin extends User {
 // Creating object 
 let student1 = new User("Naimul", "Naimul@gmail.com");
 let student2 = new User("Minha", "Minha@gmail.com");
+
+let admin1 = new Admin("Admin", "admin@gmail.com");
