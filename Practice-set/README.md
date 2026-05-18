@@ -26,3 +26,9 @@
 ## Event Handler Question -->
 
 - QS1 - Create a toggle button that changes the screen to dark-mode when we clicked & light-mode by clicked again.
+
+## OOP -->
+
+- QS1 - You are creating a website for your collage. Create a class user with 2 properties, name & email. It has also a method called viewData() that allow user to view website data.
+
+- QS2 - Create a new class called Admin which inherits from user. Add a new method called editData to admin that allow to edit website data.
