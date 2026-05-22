@@ -17,13 +17,16 @@ body {
 }
 
 .calculator {
-    border: 1px, solid, #111f38;
-    width: 340px;
+    border: 1px solid #111f38;
+    width: 360px;
     min-height: 500px;
     padding: 20px 24px;
     border-radius: 20px;
     background: transparent;
     box-shadow: 0px 3px 15px #011f44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input {
@@ -44,6 +47,24 @@ input {
 }
 
 input::placeholder {
-    color: rgba(255, 255, 255, 0.59);
+    color: rgba(244, 239, 239, 0.882);
 }
 
+.calculator > div {                    /* targets that wrapper div */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 0px 4px 10px rgba(1, 31, 68, 0.5);
+    cursor: pointer;
+}
