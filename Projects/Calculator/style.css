@@ -68,3 +68,11 @@ button {
     box-shadow: 0px 4px 10px rgba(1, 31, 68, 0.5);
     cursor: pointer;
 }
+
+.equalBtn {
+    background-color: #fb7c14;
+}
+
+.operator {
+    color: #FFD93D;
+}
