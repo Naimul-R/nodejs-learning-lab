@@ -25,6 +25,9 @@ body{
     background-color: #0b1e39;
     border: 2px solid #18435a;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clock span {
@@ -32,4 +35,19 @@ body{
     transform: rotate(calc(30deg * var(--i)));
     inset: 12px;
     text-align: center;
+}
+
+.clock span b {
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 20px;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
 }
