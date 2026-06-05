@@ -16,6 +16,9 @@ A hands-on Node.js learning lab covering core concepts, backend fundamentals, an
 
 - Tic Tac Toe
 - Rock, Paper & Sceissor
+- Analog Clock
+- Calculator
+- Portfolio
 
 # Object Orianted Programming (OOP)
 
