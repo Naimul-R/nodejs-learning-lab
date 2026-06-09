@@ -147,12 +147,13 @@
                     <a href="images/CV of Naimul.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="YOUR_FORM_NAME">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -189,6 +190,25 @@
         }
 
     </script>
+    <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbxB2KXe69p__N_jspggzMY5jXZr-WIaAI4tS4LYih5Zw26QudU3Xj56Uu4wFm87AJa9Cg/exec'
+	const form = document.forms['YOUR_FORM_NAME']
+    const msg = document.getElementById('msg')
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
 
 </body>
 </html>
