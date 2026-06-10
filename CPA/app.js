@@ -20,3 +20,36 @@ function calculator(a, b, sumCallback){
 }
 
 calculator(5, 5, sum); // Callbacks
+
+// Another examples of callbacks 
+function pizzaReady() {
+    console.log("Your pizza is successfully ready.");
+}
+function orderPizza(callWhenReady){
+    console.log("Making your pizza....");
+    callWhenReady() // pizza is done, now "call" you
+}
+
+orderPizza(pizzaReady);
+
+// Callbacks HEll (This is the bad form of cdoe to write)
+function getData(dataId, getNextData) {
+    setTimeout(() => {
+        console.log("Data", dataId);
+        if (getNextData){
+            getNextData();
+        }
+    }, 3000);
+}
+
+getData(1, () => {
+    console.log("Getting Data2....");
+    getData(2, () => {
+        console.log("Getting data3....");
+        getData(3, () =>{
+            console.log("Getting data4....");
+            getData(4);
+        });
+    });
+});
+// NOTE : Callback hell is bad way to write code --> for that Promises is better way to solve this problem.

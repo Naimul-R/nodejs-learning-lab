@@ -9,7 +9,7 @@
 - Asynchoronous
   > Due to synchronous programming, something imp instruction get blcok due to some previous instractions, which causes a delay in the UI. Asynchronous code execution allows to execute next instructions immediatly and doesn't blcok the flow.
 
-## CallBacks
+## CallBacks Hell
 
 > A callback is a function passed as an argument to another function.
 
