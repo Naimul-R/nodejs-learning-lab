@@ -18,3 +18,19 @@ function getData(getId, getNextData){
 }
 
 // Promise's two methods
+const getPromise = () => {
+    return new Promise((resole, reject) => {
+        console.log("I am a promise.");
+        //resole("success");
+        reject("Network Error!!")
+    });
+};
+
+let promise = getPromise();
+promise.then((res) => { // .then - funciton of promise
+    console.log("fulfilled", res);
+});
+
+promise.catch((err) => { // .catch - function of promise 
+    console.log("Rejected - ", err);
+});
