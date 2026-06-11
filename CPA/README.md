@@ -26,3 +26,9 @@ NOTE : function with 2 handlers
 ```
 
 **_resolve & reject are callbacks provided by JS_**
+
+### Promise methods
+
+- .than() & .catch()
+  > promise.than((res) => {.....});
+  > promise.catch((err) => {.....});
