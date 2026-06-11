@@ -15,3 +15,14 @@
 
 - Callback Hell : Nested callbacks stacked below one another forming a pyramid structure (Pyramid of Doom)
   > This style of programming becomes difficult to understand & manage.
+
+## Promises
+
+**Promise is for "eventuat" completion of task. It's an object of JS.And it is a solution of callback hell.**
+
+```
+let promise = new Promise((resolve, reject) => {....})
+NOTE : function with 2 handlers
+```
+
+**_resolve & reject are callbacks provided by JS_**
