@@ -53,3 +53,19 @@ getData(1, () => {
     });
 });
 // NOTE : Callback hell is bad way to write code --> for that Promises is better way to solve this problem.
+
+// Solution to the Callback Hell using Promise Chain
+function getData(dataId, getNextData) {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Data", dataId);
+            resolve("success");
+            if (getNextData) {
+                getNextData();
+            };
+        }, 5000);
+    });
+};
+
+let p1 = getData();
+p1.then()

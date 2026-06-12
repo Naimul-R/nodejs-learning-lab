@@ -54,14 +54,19 @@ function asyncFunction2() {
     });
 };
 
-console.log("Fetching data1.....");
-let p1 = asyncFunction1();
-p1.then((res) => {
-    console.log(res);
-});
+// This one way to fetch data
+// console.log("Fetching data1.....");
+// let p1 = asyncFunction1();
+// p1.then((res) => {
+//     console.log("Fetching data2.....");
+//     let p2 = asyncFunction2();
+//     p2.then((res) => {
+//     });
+// });
 
-console.log("Fetching data2.....");
-let p2 = asyncFunction2();
-p2.then((res) => {
-    console.log(res);
+// Another way to fatch data 
+console.log("Fetching Data1.....");
+asyncFunction1().then((res) => {
+    console.log("Fetching Data2.....");
+    asyncFunction2().then((res) => {})
 });
