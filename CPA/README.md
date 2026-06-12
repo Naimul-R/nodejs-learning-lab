@@ -27,7 +27,7 @@ NOTE : function with 2 handlers
 
 **_resolve & reject are callbacks provided by JS_**
 
-### Promise Two Funtion
+### Promise Two Funciton
 
 - .than() & .catch()
   > promise.then((res) => {.....});

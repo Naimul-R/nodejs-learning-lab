@@ -34,3 +34,34 @@ promise.then((res) => { // .then - funciton of promise
 promise.catch((err) => { // .catch - function of promise 
     console.log("Rejected - ", err);
 });
+
+// Promise chain 
+function asyncFunction1() {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data1");
+            resolve("success");
+        }, 4000);
+    });
+};
+
+function asyncFunction2() {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data2");
+            resolve("success");
+        }, 4000);
+    });
+};
+
+console.log("Fetching data1.....");
+let p1 = asyncFunction1();
+p1.then((res) => {
+    console.log(res);
+});
+
+console.log("Fetching data2.....");
+let p2 = asyncFunction2();
+p2.then((res) => {
+    console.log(res);
+});
