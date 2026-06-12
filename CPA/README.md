@@ -32,3 +32,13 @@ NOTE : function with 2 handlers
 - .than() & .catch()
   > promise.then((res) => {.....});
   > promise.catch((err) => {.....});
+
+## Async-Await
+
+**_ Async-Await funcition always return promise._**
+
+```
+Async Function myFunc() {....}
+```
+
+**_ Async pauses the execution of its surrounding async function until the promise is settled _**
