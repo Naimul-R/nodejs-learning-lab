@@ -60,12 +60,17 @@ function getData(dataId, getNextData) {
         setTimeout(() => {
             console.log("Data", dataId);
             resolve("success");
-            if (getNextData) {
-                getNextData();
-            };
-        }, 5000);
+        }, 3000);
     });
 };
 
-let p1 = getData();
-p1.then()
+getData(1)
+    .then((res) => {
+    return getData(2);
+})
+.then((res) => {
+    return getData(3)
+})
+.then((res) => {
+    console.log(res);
+});
