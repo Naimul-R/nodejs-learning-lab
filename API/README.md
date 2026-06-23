@@ -1,4 +1,4 @@
-## Fetch API
+## Fetch API (Application Programming Interface)
 
 - The fetch API provides an interface for fetching (sending/receving) resources.
 - It use _Request_ and _Responses_ objects
