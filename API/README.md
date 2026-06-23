@@ -5,3 +5,9 @@
 - The _fetch()_ method is used to fetch a resource (data)
 
 > let promise = fetch(url, [options])
+
+## Understanding Terms
+
+- _AJAX_ is Asynchronous JS & XML
+- _JSON_ is JavaScript Object Notation
+- _json() method_ : returns a secound promise that resolve with the result of parsing the response body text as JSON. (Input in JSON, output in JS object)
