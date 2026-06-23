@@ -4,7 +4,8 @@ const btn = document.querySelector("#btn");
 
 // This even much more easier to write and read
 const getAdvice = async () => {
-    let response = await fetch(URL);
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    let response = await fetch(URL + `?timestamp=${Date.now()}`);
     console.log(response);
     let data = await response.json();
     advicePara.innerText = data.slip.advice;
