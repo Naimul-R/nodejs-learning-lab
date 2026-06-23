@@ -7,22 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button
-      id="btn"
+    <div
       style="
-        background-color: #780000;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 10px;
-        font-size: 16px;
-        cursor: pointer;
-        display: block;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
       "
     >
-      Get Advice
-    </button>
-    <p id="advice"></p>
+      <button
+        id="btn"
+        style="
+          background-color: #780000;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 10px;
+          font-size: 16px;
+          cursor: pointer;
+          display: block;
+          margin: auto;
+        "
+      >
+        Get Advice
+      </button>
+
+      <p id="advice"></p>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
