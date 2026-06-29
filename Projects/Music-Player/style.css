@@ -4,3 +4,20 @@
     font-family: 'Poppins' sans-serif;
     box-sizing: border-box;
 }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.music-player {
+    background: #ffa5ab;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+}
