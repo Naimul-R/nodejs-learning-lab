@@ -1,25 +1,57 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    background: #333;
+    background-color: #0f1115;
+    background: #0a0a0c;
+    overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
+.container::before,
+.container::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 0;
+}
+.container::before {
+    width: 500px;
+    height: 500px;
+    background: #2c5364;
+    top: -100px;
+    left: -100px;
+    opacity: 0.5;
+    animation: float1 10s ease-in-out infinite;
+}
+.container::after {
+    width: 450px;
+    height: 450px;
+    background: #203a43;
+    bottom: -120px;
+    right: -100px;
+    opacity: 0.45;
+    animation: float2 12s ease-in-out infinite;
+}
+
 
 .music-player {
-    background: #ffa5ab;
+    background:  linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     width: 400px;
     padding: 25px 35px;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 nav {
@@ -35,12 +67,35 @@ nav .circle{
     line-height: 40px;
     background: #fff;
     color: #f53192;
-    box-shadow: 0 5px 10px rgba(255, 26, 26 0.22);
+    box-shadow: 0 8px 20px rgba(15, 32, 39, 0.6);
 }
 
 .song-img{
     width: 220px;
     border-radius: 50%;
     border: 8px solid #fff;
-    box-shadow: 0 10px 60px rgba(255, 26, 26 0.22);
+    box-shadow: 0 10px 35px rgba(32, 58, 67, 0.7);
+}
+
+.music-player h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #f0d9a3; 
+    margin-top: 20px;
+}
+.music-player p{
+    font-size: 16px;
+    color: #f0d9a3;
+    margin-top: 8px;
+}
+
+
+@keyframes float1 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(60px, 40px); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-50px, -30px); }
 }
